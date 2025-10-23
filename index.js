@@ -15,7 +15,7 @@ const ai = new GoogleGenAI({
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages,GatewayIntentBits.MessageContent] });
 
-client.on("clientReady",() =>{
+client.on(Events.ClientReady,() =>{
     console.log("Bot Online")
 })
 
